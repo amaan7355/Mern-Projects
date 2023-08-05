@@ -24,12 +24,25 @@
         .parent {
             display: grid;
             /* grid-template-columns: 10px 10px 150px; */
-            grid-template-columns: 1.5fr 4.5fr 2.3fr;
+            grid-template-columns: 1.5fr 4.5fr 2.1fr;
             /* grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 1fr 1fr 1fr; */
             row-gap: 20px;
             /* column-gap: px; */
             height: 100vh;
+        }
+
+        @media screen and (max-width: 1200px){
+            .parent{
+            display: grid;
+            grid-template-columns: 25% 80%;
+            }
+        }
+        @media screen and (max-width: 800px){
+            .parent{
+            display: grid;
+            grid-template-columns: 25% 80%;
+            }
         }
 
         .child1 {
@@ -49,7 +62,7 @@
         .child3 {
             background-color: white;
             border-radius: 10px;
-            padding: 20px;
+            padding: 10px;
             margin-top: 1rem;
         }
     </style>
@@ -96,6 +109,33 @@
                             <button type="button" class="btn btn-light">Login</button>
                         </center>
                     </div>
+                    <br>
+                    <div>
+                        <button class="btn" style="height: 3rem;">
+                            <img src="https://images.emojiterra.com/twitter/v13.1/512px/1f3e0.png" alt="" width="11%" style="float: left;">
+                            <p style="float: left; margin-left: 5%;">Home</p>
+                        </button>
+                        <button class="btn" style="height: 3rem;">
+                            <img src="https://em-content.zobj.net/source/microsoft-teams/363/scroll_1f4dc.png" alt="" width="11%" style="float: left;">
+                            <p style="float: left; margin-left: 5%;">Listings</p>
+                        </button>
+                        <button class="btn" style="height: 3rem;">
+                            <img src="https://images.emojiterra.com/twitter/v13.1/512px/1f399.png" alt="" width="11%" style="float: left;">
+                            <p style="float: left; margin-left: 5%;">Prodcasts</p>
+                        </button>
+                        <button class="btn" style="height: 3rem;">
+                            <img src="https://images.emojiterra.com/google/android-10/512px/1f3a5.png" alt="" width="11%" style="float: left;">
+                            <p style="float: left; margin-left: 5%;">Videos</p>
+                        </button>
+                        <button class="btn" style="height: 3rem;">
+                            <img src="https://images.emojiterra.com/google/android-12l/512px/1f3f7.png" alt="" width="11%" style="float: left;">
+                            <p style="float: left; margin-left: 5%;">Tags</p>
+                        </button>
+                        <button class="btn" style="height: 3rem;">
+                            <img src="https://cdn1.iconfinder.com/data/icons/symbols-symbols-2-add-on-vol-2/48/v-08-512.png" alt="" width="11%" style="float: left;">
+                            <p style="float: left; margin-left: 5%;">FAQ</p>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="child2">
@@ -117,29 +157,47 @@
                         </button>
                         <div class="container-fluid" style="margin-left: 2rem;">
                             <b>
-                                <h2 style="text-decoration: solid; margin-left: 15px;">What was your win this week?</h2>
+                                <h2 style="font-weight: bold; margin-left: 15px;">What was your win this week?</h2>
                             </b>
                             <button type="button" class="btn btn-light">#programming</button>
                             <button type="button" class="btn btn-light">#webdev</button>
                             <button type="button" class="btn btn-light">#opensource</button>
                             <button type="button" class="btn btn-light">#javascript</button>
                         </div>
+                        <div class="">
+                            <button class="btn btn-light"><img src="https://p.kindpng.com/picc/s/18-183162_lesson-education-facebook-image-reflection-facebook-reaction-bar.png" alt="" width="100px" height="50px"><font style="margin-left: 10px;">12 reactions</font></button>
+                            <button class="btn btn-light" style="margin-left: 15px;"><i class="fa-regular fa-comment"></i><font style="margin-left: 8px;">46 comments</font></button>
+                            <button class="btn btn-light"><font style="font-size: 12px; margin-right: 15px; margin-left: 130px;">1 min read</font><i class="fa-regular fa-bookmark"></i></button>
+                        </div>
                     </div>
                 </div>
                 <div class="child3">
-                    <div class="container">
                         <div class="row">
                             <div class="col">
                                 <b>
-                                    <h5>Listings</h5>
+                                    <h5 style="font-weight: bold;">Listings</h5>
                                 </b>
                             </div>
                             <div class="col">
                                 <a href="" style="float: right; text-decoration: none;">See all</a>
                             </div>
                         </div>
+                    <hr style="width: 0;">
+                    <div style="width: 90%;">
+                        <p style="font-size: 16px; font-weight: 400;">Join the Godot Community and Contribute Today!</p>
+                        <p style="font-weight: 200; font-size: 15px; color: grey;">collabs</p>
+                        <hr style="width: 0;">
+                        <p style="font-size: 16px; font-weight: 400;">SolveSum - Math Game for ios and Android</p>
+                        <p style="font-weight: 200; font-size: 15px; color: grey;">products</p>
+                        <hr style="width: 0;">
+                        <p style="font-size: 16px; font-weight: 400; margin-left: 2px;"><img src="https://fbsymbols.net/wp-content/uploads/2023/02/Plant-Emoji.png" alt="" width="9%" style="margin-right: 2%;">An Ultimate Hub for Developer Tools and Resources</p>
+                        <p style="font-weight: 200; font-size: 15px; color: grey;">products</p>
+                        <hr style="width: 0;">
+                        <p style="font-size: 16px; font-weight: 400; margin-left: 2px;"><img src="https://www.citypng.com/public/uploads/preview/vector-illustration-rocket-icon-image-png-11663697969kyfaffbdxf.png" alt="" width="8%" style="margin-right: 2%;">Run Our Web3 Data 'Hello World' & Score a Limited-Edition NFT!</p>
+                        <p style="font-weight: 200; font-size: 15px; color: grey;">products</p>
+                        <hr style="width: 0;">
+                        <p style="font-weight: 500; font-size: large; text-align: center;">Create a listing</p>
                     </div>
-
                 </div>
             </div>
         </div>
