@@ -1,0 +1,7 @@
+.nav-item .active{
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-bottom: 2px solid blueviolet;
+  color: blueviolet !important;
+  margin-left: 2rem;
+}
