@@ -5,3 +5,9 @@
   color: blueviolet !important;
   margin-left: 2rem;
 }
+
+.slide{
+  background-size: cover;
+  height: 60vh;
+  background-position: left;
+}
