@@ -6,7 +6,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
-                   <h2>Shadab Electronics</h2>
+                   <img className='mx-4' src="/shadab_logo.png" alt="" width={"160px"}/>
                 </a>
                 <button
                     className="navbar-toggler"
@@ -32,7 +32,7 @@ const Navbar = () => {
                             placeholder="Search"
                             aria-label="Search"
                         />
-                        <button className="btn btn-outline-primary">
+                        <button className="btn">
                             Search
                         </button>
                     </form>
